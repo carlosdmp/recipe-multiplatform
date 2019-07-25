@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="FacetManager">
+    <facet type="android-gradle" name="Android-Gradle">
+      <configuration>
+        <option name="GRADLE_PROJECT_PATH" value=":app" />
+      </configuration>
+    </facet>
+    <facet type="android" name="Android">
+      <configuration>
+        <option name="SELECTED_BUILD_VARIANT" value="debug" />
+        <option name="ASSEMBLE_TASK_NAME" value="assembleDebug" />
+        <option name="COMPILE_JAVA_TASK_NAME" value="compileDebugSources" />
+        <afterSyncTasks>
+          <task>generateDebugSources</task>
+        </afterSyncTasks>
+        <option name="ALLOW_USER_CONFIGURATION" value="false" />
+        <option name="MANIFEST_FILE_RELATIVE_PATH" value="/src/main/AndroidManifest.xml" />
+        <option name="RES_FOLDER_RELATIVE_PATH" value="/src/main/res" />
+        <option name="RES_FOLDERS_RELATIVE_PATH" value="file://$MODULE_DIR$/src/main/res" />
+        <option name="TEST_RES_FOLDERS_RELATIVE_PATH" value="" />
+        <option name="ASSETS_FOLDER_RELATIVE_PATH" value="/src/main/assets" />
+      </configuration>
+    </facet>
+    <facet type="kotlin-language" name="Kotlin">
+      <configuration version="3" platform="JVM 1.6" useProjectSettings="false" isTestModule="false" externalProjectId=":app">
+        <sourceSets>
+          <sourceSet>recipe-mpp.app.commonMain</sourceSet>
+        </sourceSets>
+        <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
+        <compilerSettings />
+        <compilerArguments>
+          <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions-runtime/1.3.41/8d3d500e42bd74c17fa9586db8ca85c336979d02/kotlin-android-extensions-runtime-1.3.41.jar:/Users/c.miguel.platero/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.41/e24bd38de28a326cce8b1f0d61e809e9a92dad6a/kotlin-stdlib-1.3.41.jar:/Users/c.miguel.platero/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.41/2ecf4aa059427d7186312fd1736afedf7972e7f7/kotlin-stdlib-common-1.3.41.jar:/Users/c.miguel.platero/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/3488ff87ddc1fbc55c5796d656bd0ad4/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/08cf95118b813379a4e87aaf8fe1b395/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/81b0753f16a12b5029921b56461b2da8/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/a6147e3f662b10e8412b523f53c4d756/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/d0e9580b9009611ffcda2ba33fe8b63a/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/171910ae1d784e321fa7a368e51fed33/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/ec55662cb7270e30094794012c6a1ee0/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/eaf109013d8c588a1fb3e74a93b03ea9/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/cea2ced1452a70126da968e73ed8d092/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/a01e71b559bb83c677653de63b2f09e1/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/6fd568603564d84d8fe5d55132a1a4c1/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/b3a720095dd8ea302562a46f988c4364/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/6a6435d31fb08db9d9c48abe4a73f05a/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/b466be9b2e90dbce13c77a55fb12e6b5/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/92a53798ab081086e2fd9b7bbd07bf01/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/4c5346f6777609ce26d814f9250c7228/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/modules-2/files-2.1/com.android.support/collections/28.0.0/c1bcdade4d3cc2836130424a3f3e4182c666a745/collections-28.0.0.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/ca8d745bd4e7e8bc6cf4d36b107c4741/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/598155693cfeba1edac2765c6d52f1f8/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/ca09f03c7b6e4441188729672ca964f2/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/00fb754a768434575aea794800f2c842/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/7f2aea48d2d03b9c3cab7614a4523257/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/6b05047f16ad5b1ac651bc5b1dc58116/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/45f953b3cfd316feac5c84e8941af76e/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/da458b386538185464d3649e0bdb2dbd/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.1.1/207a6efae6a3555e326de41f76bdadd9a239cbce/common-1.1.1.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/23e8a1a43661c58ea1b35f26bc9dbe7f/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.1.1/e55b70d1f5620db124b3e85a7f4bdc7bd48d9f95/common-1.1.1.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/caadf089122eb399f20a94217a15590d/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/28.0.0/ed73f5337a002d1fd24339d5fb08c2c9d9ca60d8/support-annotations-28.0.0.jar:/Users/c.miguel.platero/.gradle/caches/transforms-2/files-2.1/c4fea338a2b818795f94cb1c258804cf/jars/classes.jar:/Users/c.miguel.platero/.gradle/caches/modules-2/files-2.1/com.android.support.constraint/constraint-layout-solver/1.1.3/bde0667d7414c16ed62d3cfe993cff7f9d732373/constraint-layout-solver-1.1.3.jar:/Users/c.miguel.platero/Library/Android/sdk/platforms/android-28/android.jar" />
+          <option name="noStdlib" value="true" />
+          <option name="noReflect" value="true" />
+          <option name="moduleName" value="app_debug" />
+          <option name="languageVersion" value="1.3" />
+          <option name="apiVersion" value="1.3" />
+          <option name="pluginOptions">
+            <array>
+              <option value="plugin:org.jetbrains.kotlin.android:experimental=false" />
+              <option value="plugin:org.jetbrains.kotlin.android:enabled=true" />
+              <option value="plugin:org.jetbrains.kotlin.android:defaultCacheImplementation=hashMap" />
+            </array>
+          </option>
+          <option name="pluginClasspaths">
+            <array>
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.intellij.deps/trove4j/1.0.20181211/216c2e14b070f334479d800987affe4054cd563f/trove4j-1.0.20181211.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.41/3bb1958b60435763b1299eb4e2dea5bea3bab2a3/kotlin-android-extensions-1.3.41.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.41/6b1d4385d65894e07a0d14a5949f5417a408f0b7/kotlin-compiler-embeddable-1.3.41.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.41/8fb58b8954661de666e321478bf4178c18ce8018/kotlin-reflect-1.3.41.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.41/bcc3380041bbba171119c22d7024961b60da69e0/kotlin-script-runtime-1.3.41.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-common/1.3.41/f5200923717f821267ed450728e13680b9065f2e/kotlin-scripting-common-1.3.41.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-jvm/1.3.41/5fe615a9cf0ae74bd99f302c2cdc92556ea960ea/kotlin-scripting-jvm-1.3.41.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.41/2ecf4aa059427d7186312fd1736afedf7972e7f7/kotlin-stdlib-common-1.3.41.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.41/e24bd38de28a326cce8b1f0d61e809e9a92dad6a/kotlin-stdlib-1.3.41.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlinx/kotlinx-coroutines-core/1.1.1/3d2b7321cdef9ebf9cb7729ea4f75a6f6457df86/kotlinx-coroutines-core-1.1.1.jar" />
+              <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+            </array>
+          </option>
+          <option name="multiPlatform" value="true" />
+        </compilerArguments>
+      </configuration>
+    </facet>
+  </component>
+  <component name="sonarModuleSettings">
+    <option name="localAnalysisScripName" value="&lt;PROJECT&gt;" />
+    <option name="serverName" value="&lt;PROJECT&gt;" />
+  </component>
+</module>
