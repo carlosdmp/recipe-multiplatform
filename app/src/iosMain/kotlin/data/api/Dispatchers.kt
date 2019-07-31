@@ -4,17 +4,16 @@ import kotlin.coroutines.*
 import kotlinx.coroutines.*
 import platform.darwin.*
 
-internal class NsQueueDispatcher(
-    private val dispatchQueue: dispatch_queue_t
-) : CoroutineDispatcher() {
+class UI : CoroutineDispatcher() {
     override fun dispatch(context: CoroutineContext, block: Runnable) {
-        dispatch_async(dispatchQueue) {
+        val queue = dispatch_get_main_queue()
+        dispatch_async(queue) {
             block.run()
         }
     }
 }
 
-internal actual val Main: CoroutineDispatcher = NsQueueDispatcher(dispatch_get_main_queue())
+internal actual val Main: CoroutineDispatcher = UI()
 
 internal actual val Background: CoroutineDispatcher = Dispatchers.Default
 
