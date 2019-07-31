@@ -4,9 +4,9 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="true" externalProjectId=":app">
         <sourceSets>
+          <sourceSet>recipe-mpp.app.commonTest</sourceSet>
           <sourceSet>recipe-mpp.app.commonMain</sourceSet>
           <sourceSet>recipe-mpp.app.iosMain</sourceSet>
-          <sourceSet>recipe-mpp.app.commonTest</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />

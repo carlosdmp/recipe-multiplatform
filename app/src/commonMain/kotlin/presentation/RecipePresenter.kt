@@ -1,7 +1,7 @@
 package presentation
 
-import data.api.BackgroundDispatcher
-import data.api.IODispatcher
+import data.api.Background
+import data.api.Main
 import domain.CaseProvider
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -13,10 +13,10 @@ class RecipePresenter(private val view: RecipeView) {
 
     fun start() {
         GlobalScope.apply {
-            launch(IODispatcher) {
+            launch(Background) {
                 val s = case.getRecipe()
                 println(s)
-                withContext(Dispatchers.Main){
+                withContext(Main){
                     view.showState(RecipeState(s))
                 }
             }
