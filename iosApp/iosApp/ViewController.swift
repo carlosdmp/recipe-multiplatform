@@ -1,14 +1,21 @@
 import UIKit
 import app
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, RecipeView {
+   
+    func showState(state: RecipeState) {
+        label.text = state.s
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "XD"
+        let presenter = RecipePresenter(view: self)
+        presenter.start()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
     @IBOutlet weak var label: UILabel!
 }

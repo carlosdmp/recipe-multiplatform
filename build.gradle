@@ -1,6 +1,6 @@
 buildscript {
     ext{
-        ktorVer ="1.2.0-alpha-2"
+        ktorVer ="1.2.2"
     }
     repositories {
         google()

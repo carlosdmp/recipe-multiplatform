@@ -19,6 +19,7 @@ android {
         pickFirst 'META-INF/ktor-utils.kotlin_module'
         pickFirst 'META-INF/kotlinx-coroutines-core.kotlin_module'
         pickFirst 'META-INF/ktor-client-core.kotlin_module'
+        pickFirst 'META-INF/ktor-http-cio.kotlin_module'
     }
     compileSdkVersion 28
     defaultConfig {
@@ -42,6 +43,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
+
 }
 
 kotlin {
@@ -71,6 +73,7 @@ kotlin {
             dependencies {
                 implementation kotlin('stdlib')
                 implementation "io.ktor:ktor-client-android:$rootProject.ktorVer"
+                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0-RC'
             }
         }
         androidTest {
@@ -81,11 +84,13 @@ kotlin {
         }
         iosMain {
             dependencies{
+                implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.0-RC'
                 implementation "io.ktor:ktor-client-ios:$ktorVer"
             }
         }
         iosTest {
         }
+      \
     }
 }
 
