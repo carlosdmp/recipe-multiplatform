@@ -3,7 +3,6 @@ package presentation
 import data.api.Background
 import data.api.Main
 import domain.CaseProvider
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

@@ -9,8 +9,13 @@ class ViewController: UIViewController, RecipeView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let presenter = RecipePresenter(view: self)
-        presenter.start()
+        let presenter = NativeRecipePresenter(view: self)
+        do{
+        try presenter.start()
+        } catch {
+             print("mis huevos")
+        }
+       
     }
 
     override func didReceiveMemoryWarning() {
