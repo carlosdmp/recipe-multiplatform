@@ -1,39 +1,24 @@
 package data.api
 
-import data.repo.RecipeRepo
-import domain.CaseProvider
-import domain.RecipeCase
-import kotlin.coroutines.*
-import kotlinx.coroutines.*
-import platform.darwin.*
-import presentation.RecipeState
-import presentation.RecipeView
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Runnable
+import platform.darwin.dispatch_async
+import platform.darwin.dispatch_get_main_queue
+import platform.darwin.dispatch_queue_t
+import kotlin.coroutines.CoroutineContext
 
-internal actual val Main: CoroutineDispatcher = object : CoroutineDispatcher() {
+internal actual val Main: CoroutineDispatcher = NsQueueDispatcher(dispatch_get_main_queue())
+
+internal actual val Background: CoroutineDispatcher = Main
+
+internal class NsQueueDispatcher(
+    private val dispatchQueue: dispatch_queue_t
+) : CoroutineDispatcher() {
     override fun dispatch(context: CoroutineContext, block: Runnable) {
-        val queue = dispatch_get_main_queue()
-        dispatch_async(queue) {
+        dispatch_async(dispatchQueue) {
             block.run()
         }
     }
 }
 
-class NativeRecipePresenter(private val view: RecipeView) {
-    private val case = CaseProvider.getCase()
-
-    @Throws
-    fun start() {
-        GlobalScope.apply {
-            launch(Background) {
-                val s = case.getRecipe()
-                println(s)
-                withContext(Main) {
-                    view.showState(RecipeState(s))
-                }
-            }
-        }
-    }
-}
-
-internal actual val Background: CoroutineDispatcher = Main
 
