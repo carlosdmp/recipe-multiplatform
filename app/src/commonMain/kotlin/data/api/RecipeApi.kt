@@ -4,7 +4,6 @@ import io.ktor.client.*
 import io.ktor.client.request.*
 import io.ktor.http.*
 
-
 class RecipeApi {
     private val client = HttpClient()
 

@@ -1,6 +1,7 @@
 buildscript {
     ext{
         ktorVer ="1.2.2"
+        coroutinesVer = "1.3.0-RC"
     }
     repositories {
         google()

@@ -1,14 +1,11 @@
 package sample
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 import presentation.RecipePresenter
 import presentation.RecipeState
 import presentation.RecipeView
-import java.lang.Exception
 
 class MainActivity : AppCompatActivity(), RecipeView {
     override fun showState(state: RecipeState) {
