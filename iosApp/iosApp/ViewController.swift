@@ -1,10 +1,12 @@
 import UIKit
 import app
 
-class ViewController: UIViewController, RecipeView {
-   
+class ViewController: UIViewController, RecipeView{
+    
+    var currentState : RecipeState? = nil
+
     func showState(state: RecipeState) {
-        label.text = state.recipes.title
+        
     }
     
     override func viewDidLoad() {
@@ -17,5 +19,4 @@ class ViewController: UIViewController, RecipeView {
         super.didReceiveMemoryWarning()
     }
     
-    @IBOutlet weak var label: UILabel!
 }
