@@ -2,15 +2,20 @@ package sample
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.widget.TextView
 import presentation.RecipePresenter
 import presentation.RecipeState
 import presentation.RecipeView
 
 class MainActivity : AppCompatActivity(), RecipeView {
+
+    private val recipeList: RecyclerView by lazy { findViewById<RecyclerView>(R.id.rv_cardList) }
+
     override fun showState(state: RecipeState) {
         try {
-            findViewById<TextView>(R.id.main_text).text = state.recipes.title
+            recipeList.adapter = RecipeAdapter(state.recipes)
         } catch (e: Exception) {
             print(e.message)
         }
@@ -18,7 +23,10 @@ class MainActivity : AppCompatActivity(), RecipeView {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.recipe_view)
+
+        recipeList.layoutManager = LinearLayoutManager(this)
+
         val p = RecipePresenter(this)
         try {
             p.start()

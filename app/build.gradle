@@ -75,6 +75,8 @@ kotlin {
                 implementation "io.ktor:ktor-client-android:$rootProject.ktorVer"
                 implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVer"
                 implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.11.1"
+                implementation "com.android.support:recyclerview-v7:28.0.0"
+                implementation "com.android.support:cardview-v7:28.0.0"
             }
         }
         iosMain {
