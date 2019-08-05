@@ -1,5 +1,6 @@
 buildscript {
     ext{
+        kotlin_version = "1.3.41"
         ktorVer ="1.2.2"
         coroutinesVer = "1.3.0-RC"
     }
@@ -8,6 +9,8 @@ buildscript {
         jcenter()
     }
     dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
         classpath 'com.android.tools.build:gradle:3.4.2'
     }
 }
