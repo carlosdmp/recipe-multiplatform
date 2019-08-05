@@ -1,6 +1,8 @@
 package data.api
 
-import data.model.RecipesEntity
+import domain.model.Recipes
+import domain.model.RecipesEntity
+import domain.model.RecipesEntityMapper
 import io.ktor.client.*
 import io.ktor.client.request.*
 import io.ktor.http.*
@@ -12,10 +14,10 @@ class RecipeApi {
 
     private var address = Url("http://www.recipepuppy.com/api/?i=onions,garlic&q=omelet")
 
-    suspend fun getRecipe(): String {
-        val json = Json(JsonConfiguration.Stable)
-        return json.parse(RecipesEntity.serializer(), client.get {
-            url(address.toString())
-        }).toString()
-    }
+    suspend fun getRecipe(): RecipesEntity =
+        Json(JsonConfiguration.Stable).let { json ->
+            json.parse(RecipesEntity.serializer(), client.get {
+                url(address.toString())
+            })
+        }
 }

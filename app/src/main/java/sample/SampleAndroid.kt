@@ -10,7 +10,7 @@ import presentation.RecipeView
 class MainActivity : AppCompatActivity(), RecipeView {
     override fun showState(state: RecipeState) {
         try {
-            findViewById<TextView>(R.id.main_text).text = state.s
+            findViewById<TextView>(R.id.main_text).text = state.recipes.title
         } catch (e: Exception) {
             print(e.message)
         }

@@ -4,7 +4,7 @@ import app
 class ViewController: UIViewController, RecipeView {
    
     func showState(state: RecipeState) {
-        label.text = state.s
+        label.text = state.recipes.title
     }
     
     override func viewDidLoad() {

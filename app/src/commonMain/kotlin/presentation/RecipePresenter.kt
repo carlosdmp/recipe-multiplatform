@@ -3,6 +3,8 @@ package presentation
 import data.api.Background
 import data.api.Main
 import domain.CaseProvider
+import domain.model.RecipesDisplay
+import domain.model.RecipesDisplayMapper
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -13,10 +15,9 @@ class RecipePresenter(private val view: RecipeView) {
     fun start() {
         GlobalScope.apply {
             launch(Background) {
-                val s = case.getRecipe()
-                println(s)
-                withContext(Main){
-                    view.showState(RecipeState(s))
+                val recipes = case.getRecipe()
+                withContext(Main) {
+                    view.showState(RecipeState(RecipesDisplayMapper.transform(recipes)))
                 }
             }
         }

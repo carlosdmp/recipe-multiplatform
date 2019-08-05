@@ -48,6 +48,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/data/model/Recipes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/data/model/RecipesEntity.kt">
           <value>
             <set />
@@ -63,12 +68,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/domain/model/Recipes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/domain/model/RecipesEntity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/presentation/RecipePresenter.kt">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/presentation/RecipeView.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/commonMain/kotlin/presentation/model/Recipes.kt">
           <value>
             <set />
           </value>
@@ -83,7 +103,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/iosMain/kotlin/data/model/RecipesEntity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/iosMain/kotlin/data/model/Serialized.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/iosMain/kotlin/domain/model/RecipesEntity.kt">
           <value>
             <set />
           </value>

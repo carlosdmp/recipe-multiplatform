@@ -2,10 +2,12 @@ package domain
 
 import data.api.RecipeApi
 import data.repo.RecipeRepo
+import domain.model.Recipes
+import domain.model.RecipesEntityMapper
 
 class RecipeCase(private val recipeRepo: RecipeRepo) {
-    suspend fun getRecipe(): String {
-        return recipeRepo.getRecipe()
+    suspend fun getRecipe(): Recipes {
+        return recipeRepo.getRecipe().let { RecipesEntityMapper.transform(it) }
     }
 }
 
