@@ -9,10 +9,17 @@ class ViewController: UIViewController, RecipeView{
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "recipeSegue"){
+            let secondViewController = segue.destination as? RecipeTableViewController
+            secondViewController?.searchQuery = searchField.text
+        }
+    }
+
+    @IBOutlet weak var searchField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let presenter = RecipePresenter(view: self)
-        presenter.start()
     }
 
     override func didReceiveMemoryWarning() {

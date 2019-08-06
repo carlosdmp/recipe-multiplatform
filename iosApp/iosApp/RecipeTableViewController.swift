@@ -10,6 +10,8 @@ import app
 
 class RecipeTableViewController: UITableViewController, RecipeView {
 
+    var searchQuery: String?
+    
     var recipes = [RecipesDisplay.Result]()
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -39,7 +41,7 @@ class RecipeTableViewController: UITableViewController, RecipeView {
     override func viewDidLoad() {
         super.viewDidLoad()
         let presenter = RecipePresenter(view: self)
-        presenter.start()
+        presenter.start(search: searchQuery ?? "")
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

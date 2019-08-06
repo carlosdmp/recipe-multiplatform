@@ -7,4 +7,8 @@ class RecipeRepo(private val api: RecipeApi) {
     suspend fun getRecipe() : RecipesEntity {
         return api.getRecipe()
     }
+
+    suspend fun getRecipe(search: String) : RecipesEntity {
+        return api.getRecipe(search)
+    }
 }

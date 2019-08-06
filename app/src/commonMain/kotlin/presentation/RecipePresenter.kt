@@ -22,4 +22,15 @@ class RecipePresenter(private val view: RecipeView) {
             }
         }
     }
+
+    fun start(search: String) {
+        GlobalScope.apply {
+            launch(Background) {
+                val recipes = case.getRecipe(search)
+                withContext(Main) {
+                    view.showState(RecipeState(RecipesDisplayMapper.transform(recipes)))
+                }
+            }
+        }
+    }
 }

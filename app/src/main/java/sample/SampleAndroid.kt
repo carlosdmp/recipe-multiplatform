@@ -29,7 +29,12 @@ class MainActivity : AppCompatActivity(), RecipeView {
 
         val p = RecipePresenter(this)
         try {
-            p.start()
+            val searchQuery = intent.getStringExtra("SEARCH")
+            if(!searchQuery.isNullOrEmpty()){
+                p.start(searchQuery)
+            }else {
+                p.start()
+            }
         } catch (e: Exception) {
             print(e.message)
         }
